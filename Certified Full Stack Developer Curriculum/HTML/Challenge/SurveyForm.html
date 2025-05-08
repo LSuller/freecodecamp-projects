@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">Space Survey</h1>
+    <p id="description">This survey's intention is to form an understanding of the extent of the general public's space knowledge.</p>
+    
+    <form id="survey-form">
+      <label id="name-label" for="name">Name: </label>
+      <input required id="name" type="text" placeholder="Buzz Aldrin"></input><br>
+      <label id="email-label" for="email">Email: </label>
+      <input required id="email" type="email" placeholder="b.aldrin@2ndman.com"></input><br> 
+      <label id="number-label" for="number">Number of trips around the Sun: </label>
+      <input required id="number" type="number" min="10" max="100" placeholder="Age"></input><br>
+
+      <label id="dropdown-label" for="dropdown">What planet do we live on?</label>
+      <select id="dropdown">
+        <option>Earth</option>
+        <option>Jupiter</option>
+      </select>
+
+      <legend id="closest-planet">What is the closest planet to the Sun? <br>
+        <input id="mercury" name="planet" type="radio" value="Mercury"></input>
+        <label for="mercury">Mercury</label><br>
+        <input type="radio" id="venus" name="planet" value="Venus">
+        <label for="venus">Venus</label><br>
+        <input type="radio" id="mars" name="planet" value="Mars">
+        <label for="mars">Mars</label><br>
+      </legend>
+
+      <legend id="moon-question">What is the best name for our Moon? (Opinion Based) <br>
+         <input id="luna" name="moon-name" type="checkbox" value="Luna"></input>
+         <label for="luna">Luna</label><br>
+         <input type="checkbox" id="big-cheese" name="moon-name" value="Big Cheese">
+         <label for="big-cheese">Big Cheese</label><br>
+         <input type="checkbox" id="rock" name="moon-name" value="Rock">
+         <label for="rock">Rock</label><br>
+      </legend><br>
+
+      <label id="space-fact">Tell me your favourite space fact!</label><br>
+      <textarea id="space-text" col="50" row="60"></textarea><br>
+
+      <button id="submit" type="submit">Submit</button>
+
+    </form>
+  </body>
+</html>
